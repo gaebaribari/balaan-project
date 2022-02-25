@@ -1,0 +1,157 @@
+
+    :root {
+        --color-main: #d9ad5b;
+        --color-sub:#011126;
+        --color-red: #a52222;
+       
+        --color-light-grey:#d6d3d3;
+        --color-dark-grey: #222222;
+
+        --font-white: #fefefe;
+        --font-grey: #646363;
+
+        --img-width-size:120px;
+        --img-height-size:90px;
+
+    }
+
+    #main_visual {
+        width: 375px;
+        height: 320px;
+        margin: 0 auto;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-bottom: 50px;
+    }
+    .main_visual-list img {
+        display: block;
+        width: 380px;
+        height: 320px;
+    }
+
+    #best,
+    #newin,
+    #md,
+    #brand,
+    #footer {
+        width: 375px;
+        margin: 0 auto;
+    }
+    ::-webkit-scrollbar {
+        height: 4px;
+        width: 20px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--color-main);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: var(--color-light-grey);
+        border-radius: 10px;
+    }
+    .tit,
+    .txt {
+        margin: 0;
+        text-align: center;
+    }
+    .tit {
+        margin-bottom: 10px;
+    }
+
+    .products {
+        display: flex;
+        overflow-x: scroll;
+        margin: 50px 0 100px 0;
+        padding-bottom:50px;
+
+    }
+
+    .product {
+        margin-right: 30px;
+    }
+
+    .product_img {
+        width: var(--img-width-size);
+        height: var(--img-height-size);
+    }
+
+    .product_brand {
+        color: var(--color-sub);
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .product_name {
+        color: var(--font-grey);
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .price {
+        font-weight: 700;
+        color: var(--color-red);
+        font-size: 14px;
+    }
+    .heart_btn {
+        position: relative;
+        top: -110px;
+        left: 10px;
+    }
+
+    #md .product_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #md .product_brand,
+    #md .product_name,
+    #md .price {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    #md .products {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--color-sub);
+    }
+    #md .product {
+        width: 100%;
+        border-bottom: 1px solid var(--color-light-grey);
+    }
+    #md .product:last-child {
+        border-bottom: 1px solid var(--color-sub);
+    }
+    #md img {
+        margin-right: 20px;
+    }
+    #md .product>a {
+        display: flex;
+    }
+    #md .heart_btn {
+    }
+    .designer {
+        margin-right: 30px;
+        text-align: center;
+    }
+    .designer_thumbnail {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid var(--color-light-grey);
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 2px 2px 10px var(--color-light-grey);
+    }
+    .designer_thumbnail img {
+        max-width: 90%;
+        max-height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .louis-vuitton img,
+    .chanel img {
+        max-width: 60%;
+        max-height: 60%;
+    }
