@@ -41,9 +41,6 @@
     .container {
         padding: 0 25px;
     }
-    .container_product {
-        padding-left: 25px;
-    }
     #header {
         width: 375px;
         position: relative;
@@ -52,7 +49,6 @@
         height: 135px;
         background-color: var(--color-main);
     }
-
     #logo {
         width: 170px;
         height: 50px;
@@ -70,7 +66,6 @@
         justify-content: space-between;
         align-items:flex-start;
     }
-    
     .fa-shopping-bag {
         margin-left: 10px;
     }
@@ -101,14 +96,12 @@
     .snb {
         display: flex;
         flex-wrap: wrap;
-
     }
     .snb li {
         border: 1px solid var(--color-sub);
         border-radius: 10px;
-        margin: 3px;
-        padding: 2px;
-
+        margin: 5px;
+        padding: 4px;
     }
 
     .breadcrumb {
@@ -152,12 +145,10 @@
     .products_tab {
         display: flex;
         height: 40px;
-        width: 375px;
         background-color: var(--color-light-grey);
     }
     .products_tab div {
         width: 50%;
-        height: 100%;
         line-height: 40px;
         padding: 0 20px;
         font-weight: 700;
@@ -176,6 +167,7 @@
         width: 50%;
         margin-bottom: 30px;
         position: relative;
+        font-size: 14px;
     }
 
     .product_img {
@@ -186,12 +178,10 @@
     .product_brand {
         color: var(--color-sub);
         font-weight: 700;
-        font-size: 14px;
         margin-bottom: 0;
     }
     .product_name {
         color: var(--font-grey);
-        font-size: 14px;
         margin-top: 0;
     }
     .soldout {
@@ -204,7 +194,6 @@
     .price {
         font-weight: 700;
         color: var(--color-red);
-        font-size: 14px;
     }
     del.price {
         font-weight: 400;
@@ -214,13 +203,6 @@
         position: absolute;
         right: 10px;
         bottom: 110px;
-
-    }
-
-    .top_btn {
-        position: absolute;
-        top: 600px;
-        right: 20px;
     }
     #footer {
         width: 375px;

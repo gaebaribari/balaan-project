@@ -15,6 +15,192 @@
 
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        background-color: inherit;
+        border: none;
+    }
+
+    #mobile_wrap {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+    .container_product {
+        padding-left: 25px;
+    }
+
+    #header {
+        height: 135px;
+        background-color: var(--color-main);
+    }
+    #nav {
+        background-color: var(--color-main);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 375px;
+        margin: 0 auto;
+        z-index: 50;
+        display: none;
+    }
+
+    #nav .gnb {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #nav .gnb_women {
+        position: absolute;
+        top: 180px;
+        left: 50px;
+    }
+    #nav .gnb_men {
+        position: absolute;
+        top: 180px;
+        left: 220px;
+    }
+    #nav .gnb_newin {
+        position: absolute;
+        top: 400px;
+        left: 50px;
+    }
+    #nav .gnb_best {
+        position: absolute;
+        top: 650px;
+        left: 50px;
+    }
+    #nav .gnb_sale {
+        position: absolute;
+        top: 650px;
+        left: 120px;
+    }
+    #nav .gnb_event {
+        position: absolute;
+        top: 650px;
+        left: 190px;
+    }
+
+    #nav .lnb {
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    #logo {
+        width: 170px;
+        height: 50px;
+        position: relative;
+        top: -10px;
+        margin: 0;
+    }
+    #logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .header_top {
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    .fa-shopping-bag {
+        margin-left: 10px;
+    }
+    .header_search {
+        border: 1px solid var(--color-sub);
+        border-radius: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header_search span {
+        font-size: 12px;
+        line-height: 30px;
+        color: var(--font-dark-grey);
+    }
+
+    #homebtn {
+        z-index: 100;
+        background-color: #f1f1f1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 375px; /*왜이건 width를 따로지정해야될까 부모가 375인데*/
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    #homebtn button i {
+        margin-bottom: 5px;
+    }
+
+    #homebtn .active {
+        background-color: var(--color-light-grey);
+    }
+    #homebtn .up {
+        background-color: var(--color-light-grey);
+        position: relative;
+        top: -40px;
+        left: -10px;
+        width: 90px;
+        height: 75px;
+        border-radius: 50%;
+    }
+    #homebtn .up i {
+        display: block;
+    }
+
+    #footer {
+        background-color: var(--color-sub);
+        color: var(--font-white);
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    .footer_sns {
+        display: flex;
+    }
+    .footer_link {
+        border-bottom: 1px solid var(--font-white);
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0 10px 0;
+    }
+    #footer .sns {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 20px 10px 20px 0;
+    }
+    #footer .sns img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer_info p {
+        margin: 0;
+    }
+    .footer_right {
+        color: var(--font-grey);
+    }
+
     #main_visual {
         width: 375px;
         height: 320px;
@@ -30,14 +216,6 @@
         height: 320px;
     }
 
-    #best,
-    #newin,
-    #md,
-    #brand,
-    #footer {
-        width: 375px;
-        margin: 0 auto;
-    }
     ::-webkit-scrollbar {
         height: 4px;
         width: 20px;
@@ -52,44 +230,38 @@
     }
     .tit,
     .txt {
-        margin: 0;
         text-align: center;
     }
-    .tit {
-        margin-bottom: 10px;
-    }
-
     .products {
         display: flex;
         overflow-x: scroll;
-        margin: 50px 0 100px 0;
+        margin-bottom: 120px;
         padding-bottom:50px;
-
     }
 
     .product {
         margin-right: 30px;
+        font-size: 14px;
     }
 
     .product_img {
         width: var(--img-width-size);
         height: var(--img-height-size);
+        margin-bottom: 20px;
     }
 
     .product_brand {
         color: var(--color-sub);
         font-weight: 700;
-        font-size: 14px;
+        margin: 0;
     }
     .product_name {
         color: var(--font-grey);
-        font-size: 14px;
-        margin-bottom: 20px;
+        margin:0 0 20px 0;
     }
     .price {
         font-weight: 700;
         color: var(--color-red);
-        font-size: 14px;
     }
     .heart_btn {
         position: relative;
@@ -97,16 +269,21 @@
         left: 10px;
     }
 
-    #md .product_img {
+    #md .product_img { 
         width: 60px;
-        height: 60px;
+        height: 50px;
+    }
+    #md .product_img img{
+        width: 100%;
+        position: relative;
+        top: 15px;
+        left: -10px;
     }
 
     #md .product_brand,
     #md .product_name,
     #md .price {
         font-size: 13px;
-        margin: 0;
     }
 
     #md .products {
@@ -115,19 +292,20 @@
         border-top: 1px solid var(--color-sub);
     }
     #md .product {
+        display: flex;
         width: 100%;
         border-bottom: 1px solid var(--color-light-grey);
+        position: relative;
+        padding: 10px;
     }
     #md .product:last-child {
         border-bottom: 1px solid var(--color-sub);
     }
-    #md img {
-        margin-right: 20px;
-    }
-    #md .product>a {
-        display: flex;
-    }
     #md .heart_btn {
+        position: absolute;
+        top: 50%;
+        left: 270px;
+        transform: translateY(-50%);
     }
     .designer {
         margin-right: 30px;
