@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발란 모바일 메인</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/fc6db9a58c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div id="mobile_wrap">
+        <header id="header" class="container">
+            <nav id="nav" class="hidden">
+                <button class="menu_click-close"><i class="fas fa-times fa-2x"></i></button>
+                <ul class="gnb">
+                <li class="gnb_women"><a href="#">Women</a>
+                    <ul class="lnb">
+                        <li>전체보기</li>
+                        <li>의류</li>
+                        <li>슈즈</li>
+                        <li>가방</li>
+                        <li>액세서리</li>
+                        <li>주얼리</li>
+                    </ul>
+                </li>
+                <li class="gnb_men"><a href="#">Men</a>
+                    <ul class="lnb">
+                        <li>전체보기</li>
+                        <li>의류</li>
+                        <li>슈즈</li>
+                        <li>가방</li>
+                        <li>액세서리</li>
+                        <li>주얼리</li>
+                    </ul>
+                    <li class="gnb_newin"><a href="#">New in</a>
+                        <ul class="lnb">
+                            <li>전체보기</li>
+                            <li>의류</li>
+                            <li>슈즈</li>
+                            <li>가방</li>
+                            <li>액세서리</li>
+                            <li>주얼리</li>
+                        </ul>
+                </li>
+                    <li class="gnb_best"><a href="#">BEST</a></li>
+                    <li class="gnb_sale"><a href="#">SALE</a></li>
+                    <li class="gnb_event"><a href="#">EVENT</a></li>
+                </ul>
+            </nav>
+            <div class="header_top">
+                <button type="button"><i class="fa-solid fa-bars fa-2x"></i></button>
+                <h1 id="logo">
+                    <a><img src="./images/web/logo.png" alt="BALAAN"></a>
+                </h1>
+                <div class="header_top_icons">
+                    <button><i class="fa-solid fa-clock fa-2x"></i></button>
+                    <button><i class="fas fa-shopping-bag fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="header_search">
+                <span>시즌 오프 발란위크를 검색해 보세요</span>
+                <button><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+            </div>
+        </header>
+        <main>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./images/main-visual/메인.jpg" alt="호랑이띠-이벤트"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/main-visual/시즌오프.jpg" alt="시즌오프-이벤트"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/main-visual/유니크아이템기획전.jpg" alt="유니크아이템-이벤트"></a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div id="homebtn">
+                <button class="active"><i class="fa-solid fa-house fa-2x"></i>HOME</button>
+                <button><i class="fa-solid fa-bars fa-2x"></i>MENU</button>
+                <button><i class="fa-solid fa-heart fa-2x"></i>LIKE</button>
+                <button><i class="fa-solid fa-user fa-2x"></i>USER</button>
+                <button class="up"><i class="fa-solid fa-circle-question fa-2x"></i>1:1</button>
+            </div>
+            <section id="best">
+                    <div>
+                        <h2 class="tit">BEST</h2>
+                        <p class="txt">실시간 BEST 아이템을<br>만나보세요 !</p>
+                    </div>
+                    <div class="products container_product scroll">
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-louisvui.png" alt="LOUIS-VUITTON">
+                                <p class="product_brand">LOUIS VUITTON</p>
+                                <p class="product_name">가방알마BB 모노그램</p>
+                                <span class="price">2,376,050 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-louisvui2.png" alt="LOUIS-VUITTON">
+                                <p class="product_brand">LOUIS VUITTON</p>
+                                <p class="product_name">앙프렝트데일리 블랙 클러치</p>
+                                <span class="price">1,338,080 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-commde.png" alt="COMME-DES-GARCONS">
+                                <p class="product_brand">COMME DES GARCONS</p>
+                                <p class="product_name">여성 가디건 8컬러</p>
+                                <span class="price">342,000 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-prada.png" alt="PRADA">
+                                <p class="product_brand">PRADA</p>
+                                <p class="product_name">테수토백체인 스트랩 호버백</p>
+                                <span class="price">2,060,080 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-saintlauran.png" alt="SAINT-LAURENT">
+                                <p class="product_brand">SAINT LAURENT</p>
+                                <p class="product_name">컬리지 미디움 가죽 숄더백2종</p>
+                                <span class="price">2,559,020 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img class="product_img" src="./images/web/best-maxmara.png" alt="MAX-MARA">
+                                <p class="product_brand">MAX MARA</p>
+                                <p class="product_name">마누엘라카멜 롱코트</p>
+                                <span class="price">2,763,080 원</span>
+                            </a>
+                            <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class=""></div>
+                    </div>
+            </section>
+            <section id="newin">
+                <div>
+                    <h2 class="tit">NEW in</h2>
+                    <p class="txt">새로 들어온 신상<br> 놓치고 싶지 않다면 ?</p>
+                </div>
+                <div class="products container_product scroll">
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-celine.png" alt="CELINE">
+                            <p class="product_brand">CELINE</p>
+                            <p class="product_name">트레옴페숄더백 샤이니카프스킨 블랙</p>
+                            <span class="price">3,699,020 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-gucci.png" alt="GUCCI">
+                            <p class="product_brand">GUCCI</p>
+                            <p class="product_name">여성 GG 수프림 배색반지갑</p>
+                            <span class="price">529,060 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-ugg.png" alt="UGG">
+                            <p class="product_brand">UGG</p>
+                            <p class="product_name">디스케트양털 슬리퍼 샌들 3컬러</p>
+                            <span class="price">159,030 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-gucci2.png" alt="GUCCI">
+                            <p class="product_brand">GUCCI</p>
+                            <p class="product_name">인터로킹 GG 체인 숄더백</p>
+                            <span class="price">1,416,070 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-barbour.png" alt="BARBOUR">
+                            <p class="product_brand">BARBOUR</p>
+                            <p class="product_name">인터내셔널여성 왁스자켓</p>
+                            <span class="price">1,338,080 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_img" src="./images/web/newin-vivian.png" alt="VIVIENNE-WESTWOOD">
+                            <p class="product_brand">VIVIENNE WESTWOOD</p>
+                            <p class="product_name">여성울 머플러 목도리</p>
+                            <span class="price">110,010 원</span>
+                        </a>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="md" class="container">
+                <div>
+                    <h2 class="tit">MD Choice</h2>
+                    <p class="txt">국내 최고 발란 MD가<br>엄선한 제품들을 만나보세요 !</p>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/web/md-chanel.png" alt="CHANEL"></a>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">
+                                <p class="product_brand">CHANEL</p>
+                                <p class="product_name">믹스드파이버골드로고 화이트</p>
+                                <span class="price">2,466,010 원</span>
+                            </a>
+                        </div>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/web/md-cartier.png" alt="CARTIER"></a>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">
+                                <p class="product_brand">CARTIER</p>
+                                <p class="product_name">까르띠에 여성시계</p>
+                                <span class="price">4,168,030 원</span>
+                            </a>
+                        </div>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/web/md-mardi.png" alt="MARNI"></a>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">
+                                <p class="product_brand">MARNI</p>
+                                <p class="product_name">마르니 여성 미니 원피스</p>
+                                <span class="price">615,030 원</span>
+                            </a>
+                        </div>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/web/md-maison.png" alt="MAISON-MARGIELA"></a>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">
+                                <p class="product_brand">MAISON MARGIELA</p>
+                                <p class="product_name">메종마르지엘라 카브 로고<br> 와이드실버링</p>
+                                <span class="price">257,070 원</span>
+                            </a>
+                        </div>
+                        <button class="heart_btn" type="button"><i class="fa-solid fa-heart fa-2x"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="brand" class="container_product">
+                <h2 class="tit">BEST DESIGNERS</h2>
+                <ul class="products scroll">
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail dior"><img src="./images/brand/dior.png" alt="DIOR"></a>
+                        <p>DIOR</p>
+                    </li>
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail prada"><img src="./images/brand/prada.jpg" alt="PRADA"></a>
+                        <p>PRADA</p>
+                    </li>
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail chanel"><img src="./images/brand/chanel.png" alt="CHANEL"></a>
+                        <p>CHANEL</p>
+                    </li>
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail hermes"><img src="./images/brand/에르메스.png" alt="HERMES"></a>
+                        <p>HERMES</p>
+                    </li>
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail louis-vuitton"><img src="./images/brand/louisvuitton.png" alt="LOUIS VUITTON"></a>
+                        <p>LOUIS VUITTON</p>
+                    </li>
+                    <li class="designer">
+                        <a href="#" class="designer_thumbnail burberry"><img src="./images/brand/burberry.png" alt="BURBERRY"></a>
+                        <p>BURBERRY</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <button class="top-btn"><i class="fas fa-chevron-up fa-2x"></i></button>
+        <footer id="footer" class="container">
+            <div class="footer_link">
+                <a href="#">회사소개</a>
+                <a href="#">제휴문의</a>
+                <a href="#">고객센터</a>
+                <a href="#">이용약관</a>
+            </div>
+            <div class="footer_sns">
+                <a class="sns" href="#"><img src="./images/icon/insta.png" alt="insta"></a>
+                <a class="sns" href="#"><img src="./images/icon/facebook.png" alt="facebook"></a>
+                <a class="sns" href="#"><img src="./images/icon/google.png" alt="google"></a>
+                <a class="sns" href="#"><img src="./images/icon/naver.png" alt="naver"></a>
+            </div>
+            <div class="footer_info">
+                <p>주식회사 발란 | 대표 : 최형록</p>
+                <p>서울특별시 강남구 역삼동 테헤란로 217, 9층</p>
+                <p>사업자등록번호 : 815-88-00093</p>
+                <p>통신판매업 신고번호 : 2015-서울강남-01677</p>
+            </div>
+            <div class="footer_right">
+                <p>ⓒ2020  BALLAN. Ltd All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>
