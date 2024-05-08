@@ -15,8 +15,3 @@
 + 클릭하지 않고 바로 찜하거나 장바구니에 넣을 수 있는 기능 만들기
 + 바로 이벤트 갈 수 있는 버튼을 만든다.
 
-
-* * *
-웹 주소 : http://ieongeun.com/balaan/<br>
-앱 메인 주소 : http://ieongeun.com/balaan-m/<br>
-앱 세버 주소 : http://ieongeun.com/balaan-m-sub/
